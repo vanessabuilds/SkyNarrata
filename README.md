@@ -1,5 +1,7 @@
 🌤️ SkyNarrata 🌙
 
+Built with Ohara
+
 The sky narrated... your daily story of weather and wonder.
 
 A beautiful, responsive weather application that combines real-time meteorological data with astronomical information. Built with Next.js, featuring coordinate-based weather accuracy, moon phase calculations, and NASA's Astronomy Picture of the Day.
