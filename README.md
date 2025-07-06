@@ -1,307 +1,210 @@
 [🌤️ SkyNarrata 🌙](https://skynarrata.replit.app/)
- 
 Built with Ohara
+Hosted on Replit
 
-[DEMO:](https://ohara.ai/users/vanessabuilds/clips/zqfvUF01ponCv8oRBOBqBOVxtcj3PM9E7hPXcXJXukws)
+DEMO [▶️](https://ohara.ai/users/vanessabuilds/clips/zqfvUF01ponCv8oRBOBqBOVxtcj3PM9E7hPXcXJXukws)
 
 The sky narrated... your daily story of weather and wonder.
 
-A beautiful, responsive weather application that combines real-time meteorological data with astronomical information. Built with Next.js, featuring coordinate-based weather accuracy, moon phase calculations, and NASA's Astronomy Picture of the Day.
+SkyNarrata is a beautiful, responsive weather application that blends real-time meteorological data with astronomical insights, including moon phase calendars and NASA’s Astronomy Picture of the Day.
 
-Next.js TypeScript Tailwind
 ✨ Features
 🌍 Smart Weather Search
+Coordinate-based accuracy – get precise weather for any location
 
-    Coordinate-based accuracy - Get weather for the exact location you select
+Disambiguate city names – e.g., Nassau, Bahamas vs. Nassau, Minnesota
 
-    Global city disambiguation - Choose between Nassau, Bahamas vs Nassau, Minnesota
+Country codes & state info – for clear identification
 
-    Country codes and state information - Clear location identification
+Real-time autocomplete – search as you type
 
-    Real-time autocomplete - Search results as you type
-
-    Enhanced dropdown - Up to 15 city variations with smart filtering
+Smart filtering – dropdown with 15+ accurate city variations
 
 🌙 Astronomical Moon Phase Calendar
+8-day lunar calendar with phase calculations
 
-    8-day lunar calendar with precise phase calculations
+Moonrise/set times based on your coordinates
 
-    Moonrise and moonset times for any location
+Educational phase descriptions and percentages
 
-    Phase percentage and descriptions
+Timezone-aware calculations
 
-    Educational content about lunar cycles
-
-    Timezone-aware calculations based on coordinates
-
-    Beautiful lunar emoji representations for each phase
+Emoji visuals for each moon phase
 
 🚀 NASA Astronomy Picture of the Day
+Archive dating back to 1995
 
-    Historical archive dating back to June 16, 1995
+High-res images and videos with expert explanations
 
-    High-resolution images and videos
+Custom date picker
 
-    Professional astronomical explanations
-
-    Custom date picker with year, month, and day selection
-
-    Educational space content from NASA astronomers
-
-    HD image viewing with direct NASA links
+Direct NASA links for further learning
 
 🎨 Beautiful User Experience
+Cosmic themes with glassmorphism
 
-    Cosmic gradient themes with glassmorphism effects
+Adaptive weather backgrounds
 
-    Weather-adaptive backgrounds that change based on conditions
+Fully responsive and WCAG accessible
 
-    Fully responsive design for all screen sizes
-
-    Accessible UI meeting WCAG standards
-
-    Smooth animations and loading states
-
-    Dark theme optimized for nighttime and cloudy skies
+Smooth animations and a dark theme for evening viewing
 
 🔐 Production-Ready Security
+API keys handled server-side
 
-    Server-side API key management - No exposed credentials
+Environment variables for local and production use
 
-    Environment variable configuration
+Secure proxy routes
 
-    Secure API proxy endpoints
-
-    HTTPS deployment ready
-
-🏗️ Project Structure
-skynarrata/
-├── public/
-│   ├── icon-192.png          # App icon (192x192)
-│   ├── icon-512.png          # App icon (512x512)
-│   └── favicon.ico           # Browser favicon
-│
-├── src/
-│   ├── app/
-│   │   ├── api/
-│   │   │   ├── nasa-apod/
-│   │   │   │   └── route.ts   # Secure NASA API endpoint
-│   │   │   └── proxy/
-│   │   │       └── route.ts   # API proxy for external calls
-│   │   │
-│   │   ├── moon-phases/
-│   │   │   └── page.tsx       # Moon phase calendar page
-│   │   │
-│   │   ├── apod/
-│   │   │   └── page.tsx       # NASA APOD page
-│   │   │
-│   │   ├── globals.css        # Global styles and Tailwind
-│   │   ├── layout.tsx         # Root layout with metadata
-│   │   └── page.tsx           # Main weather page
-│   │
-│   ├── components/
-│   │   └── ui/
-│   │       ├── button.tsx     # Reusable button component
-│   │       ├── card.tsx       # Glassmorphism card component
-│   │       ├── input.tsx      # Search input component
-│   │       └── select.tsx     # Dropdown select component
-│   │
-│   └── lib/
-│       ├── weatherApi.ts      # Weather data fetching and geocoding
-│       ├── nasaApi.ts         # NASA APOD API integration
-│       └── utils.ts           # Utility functions
-│
-├── .env.example               # Environment variable template
-├── .env.local                 # Local development environment (not committed)
-├── .gitignore                 # Git ignore rules
-├── package.json               # Dependencies and scripts
-├── tailwind.config.js         # Tailwind CSS configuration
-├── tsconfig.json              # TypeScript configuration
-├── next.config.js             # Next.js configuration
-└── README.md                  # This file
-🚀 Quick Start
-Prerequisites
-
-    Node.js 18.0 or higher
-
-    npm, yarn, or pnpm package manager
-
-    Weather API key (included for development)
-
-    NASA API key (get free at api.nasa.gov)
+HTTPS ready
 
 🛠️ Technology Stack
 Core Framework
+Next.js 14 – App Router architecture
 
-    Next.js 14 - React framework with App Router
+TypeScript – strict typing for safer code
 
-    TypeScript - Type-safe JavaScript
-
-    Tailwind CSS - Utility-first CSS framework
+Tailwind CSS – utility-first styling
 
 UI Components
+Custom glassmorphism components (Card, Button, Input, Select)
 
-    Custom components with glassmorphism effects
+Responsive design from mobile to desktop
 
-    Responsive design for all screen sizes
+Accessible components (WCAG-compliant)
 
-    WCAG accessibility compliance
+Subtle transitions and animations
 
-    Smooth animations and transitions
+APIs & Data Sources
+OpenWeatherMap – weather + geolocation
 
-APIs & Data
+NASA APOD – public astronomy education API
 
-    OpenWeatherMap - Weather data and geocoding
+Custom astronomical engine – moon phase calculations done locally
 
-    NASA APOD - Astronomy pictures and educational content
+Hosting & Tools
+Replit – lightweight cloud deployment
 
-    Custom astronomical calculations - Moon phases and lunar data
+Ohara – agent-based automation and UI/UX builder
 
-Key Features
+Environment-based routing – secure .env setup for keys
 
-    Coordinate-based weather lookup - Eliminates location ambiguity
+🧱 Project Structure
+lua
+Copy code
+skynarrata/
+├── public/
+│   ├── icon-192.png
+│   ├── icon-512.png
+│   └── favicon.ico
+├── src/
+│   ├── app/
+│   │   ├── api/
+│   │   │   ├── nasa-apod/route.ts
+│   │   │   └── proxy/route.ts
+│   │   ├── moon-phases/page.tsx
+│   │   ├── apod/page.tsx
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   ├── components/ui/
+│   │   ├── button.tsx
+│   │   ├── card.tsx
+│   │   ├── input.tsx
+│   │   └── select.tsx
+│   └── lib/
+│       ├── weatherApi.ts
+│       ├── nasaApi.ts
+│       └── utils.ts
+├── .env.example
+├── .env.local
+├── .gitignore
+├── package.json
+├── tailwind.config.js
+├── tsconfig.json
+├── next.config.js
+└── README.md
+🚀 Quick Start
+Prerequisites
+Node.js 18 or higher
 
-    Multi-variation city search - Enhanced geocoding with 15+ results
+npm / yarn / pnpm
 
-    Local moon phase calculations - No external API dependencies
+NASA API key
 
-    Secure server-side routes - Protected API key management
-
-🎨 Design Philosophy
-Cosmic Theme
-
-    Gradient backgrounds inspired by space and sky
-
-    Glassmorphism effects for modern, translucent UI
-
-    Weather-adaptive colors that change based on conditions
-
-    Astronomical imagery integration
-
-    Dark theme optimization for better contrast
-
-User Experience
-
-    Coordinate-based accuracy eliminates location confusion
-
-    Educational content makes learning engaging
-
-    Mobile-first design optimized for touch interfaces
-
-    Fast loading with optimized performance
-
-    Progressive enhancement for all device capabilities
+OpenWeatherMap API key (provided for dev)
 
 🌟 Unique Features
-Location Accuracy Problem Solved
+Location Accuracy
+No more weather mismatches: Get local data based on exact coordinates
 
-    Nassau, Minnesota shows Minnesota weather (45.38°, -95.83°)
+Supports ambiguous cities like Paris, Texas or St. Petersburg, Florida
 
-    Saint Petersburg, Florida shows Florida weather, not Russia
+Enhanced Search
+Fuzzy matching: handles "St Petersburg" and "Saint Petersburg"
 
-    Paris, Texas shows Texas weather, not France
+Smart deduplication, shows unique results only
 
-    Coordinate-based API calls prevent wrong location data
-
-Enhanced Search Experience
-
-    Multiple search variations - tries "saint petersburg", "st petersburg"
-
-    Smart result deduplication - no duplicate cities in dropdown
-
-    Country and state codes - clear location identification
-
-    Up to 8 visible results - optimal UI balance
+Clean dropdown UI with up to 8 results
 
 Astronomical Education
+Phase explanations & moonrise/set
 
-    Moon phase descriptions - learn about lunar cycles
+NASA media with scientific descriptions
 
-    NASA educational content - professional astronomical explanations
+Archive with 29+ years of photos
 
-    Historical space imagery - 29+ years of APOD archive
-
-    Location-aware calculations - accurate for any timezone
-
-Code Guidelines
-
-    TypeScript required - No implicit any types
-
-    Responsive design - Test on mobile and desktop
-
-    Accessibility - Follow WCAG guidelines
-
-    Performance - Optimize images and API calls
-
-    Security - Never expose API keys client-side
-
-Testing Checklist
-
-    Test weather search with various city names (Nassau MN, Saint Petersburg FL)
-
-    Verify moon phase calculations for different timezones
-
-    Check NASA APOD functionality with different dates
-
-    Ensure mobile responsiveness across devices
-
-    Test dropdown behavior and coordinate accuracy
+Emoji moon phases for every day
 
 📱 Mobile Optimization
-Responsive Features
+Mobile-optimized interactions, buttons, and pickers
 
-    Touch-optimized dropdown interactions
+Lazy loading and debounced API calls
 
-    Mobile-friendly date picker for NASA APOD
+Swipe gesture support
 
-    Glassmorphism effects that work on all screen sizes
-
-    Optimized loading states for slower connections
-
-    Swipe gestures for navigation between features
-
-Performance
-
-    Optimized images from NASA with proper loading
-
-    Debounced search to prevent excessive API calls
-
-    Lazy loading for non-critical components
-
-    Efficient caching of weather and astronomical data
+Fast initial load for slower connections
 
 🔧 Configuration
 Environment Variables
-# Required for production
+ini
+Copy code
+# Required
 WEATHER_API_KEY=your-openweathermap-api-key
 NASA_API_KEY=your-nasa-api-key
 
-# Optional for development
+# Optional
 NODE_ENV=development
 Customization Options
+Change background logic in getWeatherBackground()
 
-    Weather backgrounds - Modify getWeatherBackground() function
+Replace emojis in MOON_PHASE_EMOJIS
 
-    Moon phase emojis - Update MOON_PHASE_EMOJIS constant
+Adjust search limits and theme colors via config files
 
-    City search limits - Adjust geocoding result limits
+✅ Testing Checklist
+ Test weather accuracy (e.g., Saint Petersburg, FL vs. RU)
 
-    Theme colors - Modify Tailwind config for cosmic gradients
+ Check moon phase calculations across timezones
+
+ Verify NASA APOD images on different dates
+
+ Test responsiveness on mobile devices
+
+ Confirm dropdown filtering and search behavior
 
 📄 License
+Licensed under the MIT License. See LICENSE for full details.
 
-This project is licensed under the MIT License - see the LICENSE file for details.
 🙏 Acknowledgments
+NASA
 
-    NASA for providing the Astronomy Picture of the Day API
+OpenWeatherMap
 
-    OpenWeatherMap for weather data and geocoding services
+Next.js
 
-    Next.js team for the excellent React framework
+Tailwind CSS
 
-    Tailwind CSS for the utility-first styling approach
+Ohara – AI-assisted front-end builder
 
-    The astronomy community for inspiring beautiful space-themed design
-
-    DEMO: https://ohara.ai/users/vanessabuilds/clips/zqfvUF01ponCv8oRBOBqBOVxtcj3PM9E7hPXcXJXukws
-
+The astronomy and open source communities 🌌
