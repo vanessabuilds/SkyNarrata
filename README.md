@@ -1,4 +1,4 @@
-[🌤️ SkyNarrata 🌙](skynarrata.replit.app)
+[🌤️ SkyNarrata 🌙](https://skynarrata.replit.app/)
  
 Built with Ohara
 
