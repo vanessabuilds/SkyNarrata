@@ -1,6 +1,6 @@
 [🌤️ SkyNarrata 🌙](https://skynarrata.replit.app/)
 Built with Ohara
-Hosted on Replit
+
 
 DEMO [▶️](https://ohara.ai/users/vanessabuilds/clips/zqfvUF01ponCv8oRBOBqBOVxtcj3PM9E7hPXcXJXukws)
 
