@@ -1,5 +1,4 @@
 [🌤️ SkyNarrata 🌙]
-Built with Ohara
 
 The sky narrated... your daily story of weather and wonder.
 
